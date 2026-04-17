@@ -1,0 +1,22 @@
+
+.single-post{
+    box-sizing: border-box;
+    width: 80%;
+    /* margin: 0px 50px; */
+    padding: 30px;
+
+align-self: center;
+margin:auto;
+
+line-height: 30px;
+text-align: justify;
+}
+.single-post h1{
+    padding: 10px 0px;
+    line-height: 50px;
+    /* text-decoration: 3px wavy underline #dc66728d; */
+}
+
+.post-btn{
+    justify-content: center;
+}

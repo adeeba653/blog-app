@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/create.css" />
+    <link rel="stylesheet" href="/blog-post.css" />
+    <link rel="stylesheet" href="/about.css" />
+    <link rel="stylesheet" href="/edit.css" />
+ 
+    <title>Home</title>
+  </head>
+  <body>
+    <img src="/panoramic.jpg" alt="">
+         <a class="nav-link <%= currentPage === 'home' ? "active" : '' %>" href="/"><h1>Adeeba's Space</h1></a>
+
+      <div class="top">
+
+    <header>
+      <nav>
+        <a class="nav-link <%= currentPage === 'about' ? "active" : '' %>" href="/about">About</a>
+        <a class="nav-link add-new-post <%= currentPage === 'create' ? "active" : '' %>" href="/create">New Post</a>
+      </nav>
+    </header>

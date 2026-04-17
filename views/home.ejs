@@ -1,0 +1,16 @@
+
+<%-include("partials/header.ejs")%>
+
+<div class="content">
+  <div class="post-container">
+<% for(let blog of blogs) {%>   
+  <a href="/blog/<%=blog.id%>"><div class="blog-post">
+    <p><%= blog.day %></p>
+    <div class="post-title">
+    <h3><%= blog.content.slice(0, 60) %><%= (blog.content.length > 60) ? '...' : '' %></h3></div>
+</div></a>
+<%}%></div>
+ </div>
+</div>
+
+<%-include("partials/footer.ejs")%>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+
+ <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/create.css" />
+    <link rel="stylesheet" href="/blog-post.css" />
+    <link rel="stylesheet" href="/about.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    
+    <img src="/panoramic.jpg" alt="">
+    <a class="nav-link" href="/"><h1>Adeeba's Space</h1></a>
+
+     
+
+
+<div class="container">
+<form action="/blog/<%= post.id %>?_method=PATCH" method="POST">            
+  <div class="writing-area edit-post">
+    <textarea class="title" rows="1" cols="75" type="text" id="title" name="title" required placeholder="Title"><%= post.title %></textarea>
+  <textarea rows="40" cols="75" id="content" name="content" required placeholder="Content"><%= post.content %></textarea>
+ </div>
+  <div class="post-btn">
+ <button class="btn" type="submit">Update</button></div>    
+</form></div>
+
+
+
+<%- include("partials/footer") %>
